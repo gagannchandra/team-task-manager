@@ -1,0 +1,23 @@
+/* Project Cards */
+.project-card {
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.project-card:hover { box-shadow: var(--shadow-md); border-color: var(--gray-300); }
+.project-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.project-card-icon { font-size: 1.3rem; }
+.project-card-name { font-size: 1rem; font-weight: 600; margin-bottom: 4px; color: var(--text-primary); }
+.project-card-desc { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px; line-height: 1.4; }
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--gray-100);
+  padding-top: 12px;
+}
+.project-card-members { font-weight: 500; }

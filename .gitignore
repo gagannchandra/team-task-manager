@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment files with secrets (backend only)
+backend/.env
+
+# Build output (Railway builds fresh)
+frontend/dist/
+
+# Database files
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.sw?
+
+# Logs
+*.log
+npm-debug.log*

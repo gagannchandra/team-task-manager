@@ -1,0 +1,21 @@
+{
+  "name": "team-task-manager",
+  "version": "1.0.0",
+  "description": "A collaborative Team Task Management web application",
+  "scripts": {
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/server.js",
+    "dev:server": "cd backend && npm run dev",
+    "dev:client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["task-manager", "team", "project-management"],
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,54 @@
+/* Stats Cards */
+.dash-stats { margin-bottom: 24px; }
+.stat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  text-align: center;
+}
+.stat-value { font-size: 1.75rem; font-weight: 700; color: var(--text-primary); }
+.stat-value-overdue { color: var(--red-500); }
+.stat-label { font-size: 0.75rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 2px; }
+
+/* Grid */
+.dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.dash-section {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+.dash-section-title { font-size: 0.9rem; font-weight: 600; margin-bottom: 16px; color: var(--text-primary); }
+
+/* Status Bars */
+.status-bars { display: flex; flex-direction: column; gap: 14px; }
+.status-bar-row {}
+.status-bar-label { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; margin-bottom: 6px; color: var(--text-secondary); }
+.status-bar-count { font-weight: 600; color: var(--text-primary); }
+.status-bar-track { height: 6px; background: var(--gray-100); border-radius: 3px; overflow: hidden; }
+.status-bar-fill { height: 100%; border-radius: 3px; transition: width 0.4s; }
+
+/* Priority Grid */
+.priority-grid { display: flex; justify-content: space-around; text-align: center; }
+.priority-item { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.priority-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.priority-count { font-size: 1.3rem; font-weight: 700; }
+.priority-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 500; }
+
+/* Recent Tasks */
+.recent-tasks { display: flex; flex-direction: column; }
+.recent-task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.recent-task-row:last-child { border-bottom: none; }
+.recent-task-title { font-size: 0.85rem; font-weight: 500; }
+.recent-task-meta { font-size: 0.75rem; color: var(--text-muted); }
+
+@media (max-width: 768px) {
+  .dash-grid { grid-template-columns: 1fr; }
+}

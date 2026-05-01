@@ -1,0 +1,80 @@
+/* Kanban Board */
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.kanban-col {
+  background: var(--gray-50);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  min-height: 200px;
+}
+.kanban-col-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+.kanban-col-label { display: flex; align-items: center; gap: 8px; }
+.kanban-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.kanban-col-count {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 1px 8px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.kanban-col-body { padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.kanban-empty { text-align: center; padding: 24px; color: var(--text-muted); font-size: 0.8rem; }
+
+/* Task Card */
+.task-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+.task-card:hover { box-shadow: var(--shadow-sm); }
+.task-overdue { border-left: 3px solid var(--red-500); }
+.task-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.task-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.15s;
+}
+.task-delete:hover { opacity: 1; }
+.task-card-title { font-size: 0.875rem; font-weight: 600; margin-bottom: 4px; color: var(--text-primary); }
+.task-card-desc { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 10px; line-height: 1.4; }
+.task-card-footer { display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; }
+.task-card-assignee { display: flex; align-items: center; gap: 6px; color: var(--text-secondary); }
+.task-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--blue-100);
+  color: var(--blue-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+.task-unassigned { color: var(--text-muted); font-style: italic; }
+.task-due { color: var(--text-muted); }
+.task-due.overdue { color: var(--red-500); font-weight: 600; }
+.task-card-actions { margin-top: 10px; display: flex; gap: 6px; }
+
+@media (max-width: 900px) {
+  .kanban-board { grid-template-columns: 1fr; }
+}
