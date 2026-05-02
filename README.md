@@ -3,8 +3,15 @@
 ![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white)
-![Railway](https://img.shields.io/badge/Deployed%20on-Railway-0B0D0E?logo=railway)
+[![Railway](https://img.shields.io/badge/Deployed%20on-Railway-0B0D0E?logo=railway)](https://team-task-managerr.up.railway.app)
 ![License](https://img.shields.io/badge/License-MIT-blue)
+
+## Demo
+
+https://github.com/user-attachments/assets/980619a7-a7a8-471c-9d6c-3e974107229a
+
+🔗 **Live App:** [team-task-managerr.up.railway.app](https://team-task-managerr.up.railway.app)
+
 
 A full-stack collaborative web application for managing team projects and tasks — built with React, Node.js/Express, and MongoDB Atlas. Deployable as a single Railway service.
 
