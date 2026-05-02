@@ -186,7 +186,7 @@ export default function ProjectDetail() {
                       </div>
                       {task.dueDate && (
                         <span className={`task-due ${isOverdue(task) ? 'overdue' : ''}`}>
-                          {new Date(task.dueDate).toLocaleDateString()}
+                          {new Date(task.dueDate).toLocaleDateString('en-GB')}
                         </span>
                       )}
                     </div>
