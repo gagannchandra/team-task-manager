@@ -65,7 +65,7 @@ export default function Projects() {
               <p className="project-card-desc">{project.description || 'No description'}</p>
               <div className="project-card-footer">
                 <span className="project-card-members">{project.projectMembers?.length || 0} member{(project.projectMembers?.length || 0) !== 1 ? 's' : ''}</span>
-                <span className="project-card-date">{new Date(project.createdAt).toLocaleDateString()}</span>
+                <span className="project-card-date">{new Date(project.createdAt).toLocaleDateString('en-GB')}</span>
               </div>
             </Link>
           ))}
